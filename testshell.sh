@@ -5,9 +5,10 @@ IP_1=199.233.388.444
 IP2=22.222.2222.22
 string=HalloWorld
 directory=qbic
+dir=/root/.testfolder2/test.conf
 mkdir .testfolder2
 masternodekey=$(./$directory-cli masternode genkey)
-echo -e "masternode=1\nmasternodeprivkey=$masternodekey\nGen_pass=${GEN_PASS}\nIP_ADD=${IP_ADD}\nIP_1=$IP_1\nIP2=${IP2}\nstring=$string\nstring=${string}" >> /root/.testfolder2/test.conf
+echo -e "masternode=1\nmasternodeprivkey=$masternodekey\nGen_pass=${GEN_PASS}\nIP_ADD=${IP_ADD}\nIP_1=$IP_1\nIP2=${IP2}\nstring=$string\nstring=${string}" >> $dir
 echo "Masternode private key: $masternodekey"
 echo "Welcome to the QBIC world"
 echo "IP_1: $IP_1"
