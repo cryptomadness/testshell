@@ -1,7 +1,7 @@
 #!/bin/bash
 GEN_PASS=`pwgen -1 20 -n`
 IP_ADD=`shuf -i 10000-50000 -n1`
-IP_1=199.233.388.444
+IP_1=${199.233.388.444 555.5}
 IP2=22.222.2222.22
 string=HalloWorld
 directory=qbic
